@@ -41,7 +41,7 @@
         <div id="quiz-screen" class="hidden">
             <div class="flex justify-between items-center mb-4 text-xs font-medium text-slate-400">
                 <span id="question-progress">Soal 1 dari 50</span>
-                <span id="timer" class="bg-amber-50 text-amber-700 px-2 py-0.5 rounded">Waktu: <span id="time-left">15</span>s</span>
+                <span id="timer" class="bg-amber-50 text-amber-700 px-2 py-0.5 rounded">Waktu: <span id="time-left">30</span>s</span>
             </div>
 
             <!-- Progress Bar -->
@@ -145,7 +145,7 @@
         let currentIndex = 0;
         let score = 0;
         let timer;
-        let timeLeft = 15;
+        let timeLeft = 30;
         let isAnswered = false;
 
         function shuffleArray(array) {
@@ -175,7 +175,7 @@
         function loadQuestion() {
             isAnswered = false;
             clearInterval(timer);
-            timeLeft = 15;
+            timeLeft = 30;
             document.getElementById('time-left').innerText = timeLeft;
             document.getElementById('next-btn').classList.add('hidden');
             
